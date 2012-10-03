@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A backend tool that resizes a directory of images according to configured breakpoints whilst generating Responsive I",
   "main": "index.js",
+  "bin": { "respizer": "index.js" },  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,13 +17,20 @@
     "tool",
     "command",
     "line",
-    "imagemagick",
     "resizer"
   ],
   "dependencies": {
-    "imagemagick": "0.1.3",
-    "canvas": "0.13.1"
+    "gm": "1.5.x",
+    "progress": "0.1.x"
   },
   "author": "David Mark Clements",
-  "license": "BSD"
+  "license": "BSD",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidmarkclements/Respizer"
+  }
 }
