@@ -7,8 +7,7 @@ Version: 0.0.1
 
 -----
 
-Dependencies
-===
+##Dependencies
 Respizer relies on graphicsmagick, so you'll need that installed on your system. 
 With ubuntu it's as simple as 
 ```
@@ -18,15 +17,13 @@ sudo apt-get install graphicsmagick
 If you need help installing graphicsmagick see http://www.graphicsmagick.org/. 
 
 
-Installation
-===
+##Installation
 
 ```
 sudo npm install -g respizer
 ```
 
-Configuration
-===
+##Configuration
 Respizer uses a configuration file called `respizer.conf.js`, this must be available in your
 current working directory for respizer to work. 
 Here's a sample configuration file with comments:
@@ -91,19 +88,18 @@ module.exports = {
 }
 
 ```
-Explanation
-===
+##Explanation
 
-breakpoints
-====
+###breakpoints
+
 `breakpoints` is an object, with properties defining the targetted device pixel ratio.
 1x is normal screens, 2x is retina screens. Some devices are 1.5x, and who knows in
 the future maybe for some crazy reason there will be a 3x or a 4x. 
 
 Each device pixel ratio property holds an array of targetted screen widths. 
 
-areas
-====
+###areas
+
 `area` referrs to a designated (by percentage) piece of viewport estate that will be holding
 an image (or images, in the case of a slider or such). 
 
@@ -123,8 +119,7 @@ media query breakpoints you have set that effect the width of the designated ima
 The `maxWidths` property overrides the `minWidths` property and is for exactly the same purpose, 
 except it comes from a desktop first approach instead of mobile first. 
 
-options
-====
+###options
 Focussing on the less obvious properties:
 
 Respizer can generate images and/or code according to the configuration inputs. 
@@ -151,9 +146,7 @@ HTML in the responsive `picture` element format which could then be used in brow
 with the help of [Respondu](https://github.com/davidmarkclements/Respondu)
 
 
-Usage
-===
-
+##Usage
 Once you have your configuration file setup, usage is very simple. 
 
 ```
@@ -161,8 +154,7 @@ respizer
 ```
 
 
-Plans
-===
+##Plans
   * A Respizer Grunt task so that it can be part of the overall build process
   * A modification time cache, to avoid rerunning resize code unneccessarily
   * Speed improvements
@@ -170,8 +162,7 @@ Plans
   * More artisticDirection methods, zoomLeft zoomRight etc. 
 
 
-Tests
-===
+##Tests
   Clone this repository and simply run .`/index.js`, 
   the example configuration file runs respizer on the test folder which holds test.jpg
   
