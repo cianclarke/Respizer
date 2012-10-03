@@ -79,7 +79,13 @@ module.exports = {
       defaultBreakpoint: 1024, //what size is the fallback
       minOrMax: 'min-width', //min-width (mobile first) or max-width (desktop first) approach
       className: false //add a class attribute to each element      
-      
+      respondu: true, //if true code get's wrapped in Respondu syntax (https://github.com/davidmarkclements/Respondu)
+      complete: function (allCode, codeObj) { //codeObj is only available if areas have names. 
+        console.log(codeObj.Test);            //respondu is wrapped around all code, and then individually in area codes in codeObj
+        
+        //from here you could write it to a file
+        //or a database or create a server and serve it
+      }      
     }
 
     
@@ -144,6 +150,8 @@ enlarging the focal point of the image (assuming the focal point is central).
 `generateCode` provides settings for the generate code feature which currently outputs
 HTML in the responsive `picture` element format which could then be used in browsers
 with the help of [Respondu](https://github.com/davidmarkclements/Respondu)
+
+
 
 
 ##Usage
