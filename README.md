@@ -15,7 +15,7 @@ With ubuntu it's as simple as
 sudo apt-get install graphicsmagick
 ```
 
-If you need help installing graphicsmagick see the (graphicsmagick website)[http://www.graphicsmagick.org/]. 
+If you need help installing graphicsmagick see the http://www.graphicsmagick.org/. 
 
 
 Installation
